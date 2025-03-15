@@ -20,11 +20,11 @@ body {
     margin-bottom: 8vh;
     
 }
-.flex{
-    display: flex;
-    align-items: center;
-    margin-top: -3vh;
-
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add spacing between icon and description */
+  margin-top: -3vh;
 }
 .description{
     text-transform: capitalize;
@@ -38,10 +38,11 @@ body {
 .humidity{
     margin-bottom: 0.8em;
 }
-.icon{
-    height:10vh;
-    width: 5lh;
-    margin-left: -30px;
+.icon {
+  height: 60px; /* Fixed height for consistency */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: -30px;
+  object-fit: contain; /* Prevent distortion */
 }
 .search-button{
     margin-right: 3em;
@@ -71,7 +72,7 @@ input.search-bar{
     font-size: 100%;
     margin-right: auto;
 }
-feature/gps-location
+
 .search-bar {
     flex-grow: 1;
   }
